@@ -18,3 +18,57 @@
 font-family: 'Poppins', sans-serif;
 - Font size: 15px 
 */
+
+html {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.description , .sentence {
+    color: hsl(229, 6%, 66%);
+}
+
+.title {
+    font-weight: 600;
+}
+
+.thin {
+    color: hsl(229, 6%, 66%);
+}
+
+.box1 , .box2 , .box3 , .box4 {
+    background-color: white;
+
+    width: 330px;
+}
+
+.boxcontent1 , .boxcontent2 , .boxcontent3 , .boxcontent4 {
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.boxcolor1 , .boxcolor2 , .boxcolor3 , .boxcolor4 {
+    width: 100%;
+    height: 5px;
+}
+
+.boxcolor1 {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.boxcolor2 {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.boxcolor3 {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.boxcolor4 {
+    background-color: hsl(212, 86%, 64%);
+}
