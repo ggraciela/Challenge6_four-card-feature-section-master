@@ -164,8 +164,48 @@ html {
 }
 
 @media screen and (max-width: 500px) {
+    html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
     body {
         display: flex;
         flex-direction: column;
+        zoom: 0.75;
+        margin: auto;
+    }
+
+    .box1 , .box2 , .box3 , .box4 {
+        margin: 35px 0px;
+        width: 350px;
+    }
+
+    .boxes {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+ 
+
+    .description {
+        width: 300px;
+        margin: auto;
+        zoom: 1.11;
+    }
+
+    .icon1 , .icon2 , .icon3 , .icon4 {
+        margin-right: 10px;
+    }
+
+    h1 {
+        width: 350px;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .thin {
+        margin-top: 100px;
+        margin-bottom: 0px;
     }
 }
