@@ -22,8 +22,7 @@ font-family: 'Poppins', sans-serif;
 html {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    /* background-color: hsl(0, 0%, 98%); */
-    background-color: gray;
+    background-color: hsl(0, 0%, 98%);
 }
 
 .thin {
@@ -32,6 +31,7 @@ html {
 
 .description , .sentence {
     color: hsl(229, 6%, 66%);
+    text-align: center;
 }
 
 .title {
@@ -43,20 +43,21 @@ html {
 }
 
 .boxcolor1 , .boxcolor2 , .boxcolor3 , .boxcolor4 {
-    width: 330px;
+    width: 380px;
     height: 5px;
-
-    /* border-top-left-radius: 100px;
-    border-top-right-radius: 100px; */
 }
 
 .box1 , .box2 , .box3 , .box4 {
     background-color: white;
 
-    width: 330px;
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
+    width: 380px;
+    height: 245px;
     border-radius: 10px;
+    overflow: hidden;
+    
+    box-shadow: 0px 15px 25px -5px rgba(177,188,240,0.5);
+    -webkit-box-shadow: 0px 15px 25px -5px rgba(177,188,240,0.5);
+    -moz-box-shadow: 0px 15px 25px -5px rgba(177,188,240,0.5);
 }
 
 
@@ -86,9 +87,85 @@ html {
 .sentence {
     padding-top: 10px;
     padding-bottom: 40px;
-    padding-right: 10px;
+    width: 300px;
+    text-align: left;
+
 }
 
 .icon1 , .icon2 , .icon3 , .icon4 {
     justify-self: right;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        display: flex;
+    }
+
+    body {
+        margin: auto;
+    }
+
+    h1 {
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        box-sizing: border-box;
+        padding-bottom: 15px;
+    }
+
+    .thin {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+
+    .description {
+        width: 500px;
+        margin: auto;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 410px);
+        grid-template-rows: repeat(2, 275px);
+        grid-template-areas:
+            "a b d"
+            "a c d";
+        padding-top: 50px;
+        justify-items: center;
+    }
+
+    .box1 {
+        grid-area: a;
+        align-self: center;
+    }
+
+    .box2 {
+        grid-area: b;
+    }
+
+    .box3 {
+        grid-area: c;
+    }
+
+    .box4 {
+        grid-area: d;
+        align-self: center;
+    }
+
+    .sentence {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }
